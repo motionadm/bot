@@ -3,4 +3,11 @@ requests==2.31.0
 python-dotenv==1.0.0
 pymongo==4.6.1
 dnspython==2.4.2
+aiohttp==3.9.1
+async-timeout==4.0.3
+attrs==23.1.0
+charset-normalizer==3.3.2
+idna==3.6
+multidict==6.0.4
+yarl==1.9.3
 gunicorn==21.2.0 
