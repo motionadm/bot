@@ -52,13 +52,13 @@ async def update_status():
             await bot.change_presence(
                 activity=discord.Activity(
                     type=discord.ActivityType.watching,
-                    name=f"{len(bot.guilds)} servers"
+                    name=f"the SMM panel"
                 )
             )
             await asyncio.sleep(300)  # Update every 5 minutes
         except Exception as e:
             logger.error(f"Error updating status: {e}")
-            await asyncio.sleep(60)  # Wait a minute before retrying
+            await asyncio.sleep(60)   # Wait a minute before retrying
 
 @bot.event
 async def on_error(event, *args, **kwargs):
